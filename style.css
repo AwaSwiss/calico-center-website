@@ -48,7 +48,6 @@ nav ul li a:active {
 }
 
 #donate {
-    border: 1px solid black;
     background-color: #f4ad76;
 }
 #donate a {
@@ -111,6 +110,7 @@ body {
     padding: 2em 4em;
     text-decoration: none;
     color: black;
+    border-radius: 8px;
 }
 #hero_cta:hover {
     background-color: #e39d67;
@@ -118,15 +118,21 @@ body {
 
 /* Main */
 
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+}
+
 section {
-    height: 30em;
     text-align: center;
-    padding: 2rem;
+    padding: 10px;
 }
 
 .column_container {
     display: flex;
-    gap: 0.5rem;
+    gap: 5em;
+    padding: 1em;
 }
 
 .column {
@@ -175,7 +181,7 @@ footer ul li a:hover {
 }
 
 #last_updated {
-    font-size: small;
+    font-size: x-small;
 }
 
 /* Responsiveness */
@@ -196,5 +202,14 @@ footer ul li a:hover {
 
     ul {
         flex-direction: column;
+    }
+
+    iframe {
+        width: 15em;
+        height: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
