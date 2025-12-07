@@ -70,6 +70,12 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <p class="copyright">&copy;2025 Calico Center. All rights reserved.</p>
+        <p id="last_updated"></p>
     </footer>
+    <script>
+        const lastModifiedDate = document.lastModified;
+        const lastUpdatedElement = document.getElementById("last_updated");
+        lastUpdatedElement.innerHTML = `Last Updated: ${lastModifiedDate}`;
+    </script>
 </body>
 </html>
