@@ -124,6 +124,32 @@ main {
     width: auto;
 }
 
+.banner{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(images/hero_cat.jpg);
+    max-width: 100%;
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner_content {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.banner_content h2 {
+    font-size: 3em;
+}
+.banner_content p {
+    margin-bottom: 5em;
+    font-size: 1.5em;
+}
+
 section {
     text-align: center;
     padding: 10px;
@@ -137,11 +163,36 @@ section {
 
 .column {
     flex: 1;
-    }
+}
 
 iframe {
     width: 20em;
     height: 20em;
+    padding: 2px;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 10px;
+}
+
+.cat {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cat img {
+    height: 20em;
+    padding-top: 5%;
 }
 
 /* Footer */
