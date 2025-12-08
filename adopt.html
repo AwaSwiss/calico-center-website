@@ -38,22 +38,25 @@
     <main>
 
         <ul class="filters">
-            <li>Age:</li>
-                <ul>
+            <li class="filter_group"> <span>Age:</span>
+                <ul class="filter_options">
                     <li class="filter_button" data-filter="1">Kitten</li>
                     <li class="filter_button" data-filter="2">Adult</li>
                 </ul>
-            <li>Sex:</li>
-                <ul>
+            </li>
+            <li class="filter_group"><span>Sex:</span>
+                <ul class="filter_options">
                     <li class="filter_button" data-filter="3">Male</li>
                     <li class="filter_button" data-filter="4">Female</li>
                 </ul>
-            <li>Size:</li>
-                <ul>
+            </li>
+            <li class="filter_group"><span>Size:</span>
+                <ul class="filter_options">
                     <li class="filter_button" data-filter="5">Small</li>
                     <li class="filter_button" data-filter="6">Medium</li>
                     <li class="filter_button" data-filter="7">Large</li>
                 </ul>
+            </li>
         </ul>
 
         <div class="filtr-active filter_button active" data-filter="all">Remove Filters</div>
