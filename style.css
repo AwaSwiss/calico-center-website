@@ -347,6 +347,10 @@ footer ul li a:hover {
     .filtr-item {
         width: 50%;
     }
+    #herobanner_content {
+        left: 50%;
+        top: 50%;
+    }
     .banner_content {
         left: 50%;
         top: 50%;
@@ -362,14 +366,8 @@ footer ul li a:hover {
         flex-direction: column;
     }
 
-    #herobanner_content {
-        left: 50%;
-        top: 50%;
-    }
-
     nav {
         flex-direction: column;
-
     }
 
     ul {
@@ -416,3 +414,8 @@ footer ul li a:hover {
 }
 
 
+@media screen and (max-width: 450px) {
+    #hero_cta {
+        padding: 1rem 2rem;
+    }
+}
