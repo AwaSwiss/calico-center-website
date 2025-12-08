@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calico Center</title>
+    <title>Adopt :: Calico Center</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,6 +69,7 @@
                     <li>Sex: Male</li>
                     <li>Age: 8</li>
                     <li>Size: Medium</li>
+                    <li>ID: 1</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -79,6 +80,7 @@
                     <li>Sex: Male</li>
                     <li>Age: 5</li>
                     <li>Size: Large</li>
+                    <li>ID: 2</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -89,6 +91,7 @@
                     <li>Sex: Female</li>
                     <li>Age: 4</li>
                     <li>Size: Medium</li>
+                    <li>ID: 3</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -99,6 +102,7 @@
                     <li>Sex: Female</li>
                     <li>Age: 10</li>
                     <li>Size: Large</li>
+                    <li>ID: 4</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -109,6 +113,7 @@
                     <li>Sex: Female</li>
                     <li>Age: 2</li>
                     <li>Size: Small</li>
+                    <li>ID: 5</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -119,6 +124,7 @@
                     <li>Sex: Male</li>
                     <li>Age: 2</li>
                     <li>Size: Small</li>
+                    <li>ID: 6</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -129,6 +135,7 @@
                     <li>Sex: Male</li>
                     <li>Age: 6</li>
                     <li>Size: Medium</li>
+                    <li>ID: 7</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -139,6 +146,7 @@
                     <li>Sex: Male</li>
                     <li>Age: 9</li>
                     <li>Size: Medium</li>
+                    <li>ID: 8</li>
                     <li><a class="cta_button" href="#adoption_form">Adopt Me</a></li>    
                 </ul>
             </div>
@@ -152,11 +160,26 @@
             <h2>Adoption Application</h2>
             <p>Before applying, please read our <a href="adoption_info.html">adoption info page.</a></p>
             <form action="#thank_you" method="post">
-                First Name: <input type="text" placeholder="First Name" required> <br>
-                Last Name: <input type="text" placeholder="Last" required> <br>
-                Email: <input type="email" placeholder="example@example.com" required> <br>
+                <div class="input">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter in your first name" value="" pattern="[a-zA-Z]+" required>
+
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter in your last name" value="" pattern="[a-zA-Z]+" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" pattern="^(.+)@([^\.].*)\.([a-z]{2,})$" required>
+
+                        <label for="cat_ID">Interested in Cat:</label>
+                        <input type="number" class="form-control" id="cat_ID" placeholder="1" min="1" max="8" step="1" value=""1>
+                    <br>
+                </div>
                 <button type="submit">Submit Application</button> <br><br>
             </form>
+        </section>
+        <section id="thank_you">
+            <h2>Thank you!</h2>
+            <p>Your adoption application has been submitted. We will get back to you shortly.</p>
         </section>
     </main>
     <footer>
@@ -183,6 +206,11 @@
     		$(document).ready(function(){
 		    	var filterizd = $('.container').filterizr({});
     		});
+            $('#adoption_form').submit(function(event) {
+                event.preventDefault();
+                $('#thank_you').toggle();
+                $('#adoption_form').toggle();
+            });
     	})(jQuery);
     </script>
     <script src="script.js"></script>
