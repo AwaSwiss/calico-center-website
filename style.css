@@ -138,6 +138,7 @@ main {
     left: 25%;
     transform: translate(-50%, -50%);
     color: white;
+    padding-top: 2rem;
 }
 
 .banner_content h2 {
@@ -376,11 +377,12 @@ footer ul {
     margin: 0;
     padding: 0;
     justify-content: center;
+    gap: 10px;
 }
 
 footer ul li {
     display: inline-block;
-    padding-right: 2em;
+    
 }
 
 footer ul li a {
@@ -403,7 +405,13 @@ footer ul li a:hover {
         left: 50%;
         top: 50%;
     }
+#hero_cta {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+}
+
 @media screen and (max-width: 1000px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -422,6 +430,10 @@ footer ul li a:hover {
 
     .adoption_summary .steps{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hero_cta {
+        padding: 1.5rem 2.5rem;
     }
 }
 
@@ -478,10 +490,6 @@ footer ul li a:hover {
     .adoption_summary .steps{
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-
-@media screen and (max-width: 450px) {
     #hero_cta {
         padding: 1rem 2rem;
     }
