@@ -129,6 +129,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 5em;
 }
 
 .banner_content {
@@ -150,6 +151,13 @@ main {
 section {
     text-align: center;
     padding: 10px;
+    margin-bottom: 4em;
+    margin-top: 4em;
+}
+
+section a {
+    color: #e39d67;
+    text-decoration: none;
 }
 
 .column_container {
@@ -192,18 +200,31 @@ iframe {
     width: 25%;
 }
 
+.filtr-active {
+    text-align: center;
+}
+
 .filters {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .filters ul {
     list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .filters ul li {
     display: inline-block;
-    padding: 3px;
+    padding: 3px 8px;
     border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .filters ul li:hover {
