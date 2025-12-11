@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calico Center</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -12,13 +16,39 @@
         <ul>
             <li><a href="adopt.html">Adopt</a></li>
             <li><a href="adoption_info.html">Adoption Info</a></li>
-            <li><a href="support.html">Support Us</a></li>
+            <li><a href="support.html">Get Involved</a></li>
             <li><a class="active" href="contact.html">Contact Us</a></li>
         </ul>
         <div id="donate"><a href="support.html">Donate</a></div>
     </nav>
-    <div id="herobanner">
-        Adopt
+    <div class="banner">
+        <div class="banner_content">
+            <h2>Meet Our Cats</h2>
+            <p>Find your perfect match among our cats.</p>
+        </div>
     </div>
+    <main>
+        
+    </main>
+    <footer>
+        <h2>Sign up for the Calico Center newsletter:</h2>
+        <a class="cta_button" href="contact.html">
+            Sign Up
+        </a>
+        <p>Registered 501(c)(3) nonprofit organization.</p>
+        <ul>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li><a href="adoption_info.html">Adoption Info</a></li>
+            <li><a href="support.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p class="copyright">&copy;2025 Calico Center. All rights reserved.</p>
+        <p id="last_updated"></p>
+    </footer>
+    <script>
+        const lastModifiedDate = document.lastModified;
+        const lastUpdatedElement = document.getElementById("last_updated");
+        lastUpdatedElement.innerHTML = `Last Updated: ${lastModifiedDate}`;
+    </script>
 </body>
 </html>
