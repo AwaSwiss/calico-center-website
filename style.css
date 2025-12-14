@@ -211,7 +211,7 @@ h3 {
     color: #1b8378;
 }
 
-.adoption_summary {
+.adoption_summary, #volunteer, #foster {
     background-color: #a8eae3;
     border-radius: 20px 20px;
     margin-left: -20%;
@@ -448,6 +448,10 @@ h1 {
     max-height: 400px;
     border-radius: 10px;
     padding-bottom: 0;
+}
+
+.writing {
+    text-align: left;
 }
 
 
