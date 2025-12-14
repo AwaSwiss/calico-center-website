@@ -43,10 +43,10 @@ nav ul li a:hover {
     width: auto;
 }
 
-#donate {
+#home_donate {
     background-color: #f4ad76;
 }
-#donate a {
+#home_donate a {
     font-size: 2em;
     padding: 1em 2em;
     text-decoration: none;
@@ -54,7 +54,7 @@ nav ul li a:hover {
     color: black;
 }
 
-#donate a:hover {
+#home_donate a:hover {
     background-color: #e39d67;
 }
 
@@ -427,6 +427,15 @@ h1 {
     background-color: #a8eae3;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+/* Get Involved */
+
+#volunteer img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 5%; 
 }
 
 /* Footer */
