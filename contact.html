@@ -19,27 +19,42 @@
             <li><a href="get_involved.html">Get Involved</a></li>
             <li><a class="active" href="contact.html">Contact Us</a></li>
         </ul>
-        <div id="donate"><a href="get_involved.html">Donate</a></div>
+        <div id="home_donate"><a href="get_involved.html">Donate</a></div>
     </nav>
-    <div class="banner">
+    <div class="banner" id="banner4">
         <div class="banner_content">
             <h2>Contact Us</h2>
-            <p></p>
+            <p>Get in touch.</p>
         </div>
     </div>
     <main>
-        <section>
-            <p></p>Thank you for contacting Calico Center. To get your question answered most efficiently, please check our <a href="adoption_info.html">frequently asked questions</a> to see if your question has been answered.</p>
-        </section>
-        <section class="location_hours" class="text">
+    <section class="location_hours">
             <h2>Location & Hours</h2>
             <div class="column_container">
                 <div class="column">
                     <h2>Calico Center Adoption Center</h2>
                     <p>55 Lexington Ave, New York, NY 10010</p>
                     <h3>Hours of Operations</h3>
-                    <p>Monday-Friday: 12PM-7PM</p>
-                    <p>Saturday-Sunday: 10AM-5PM</p>
+                    <div class="operation_hours">
+                        <div>
+                            <p>Monday</p>
+                            <p>Tuesday</p>
+                            <p>Wednesday</p>
+                            <p>Thursday</p>
+                            <p>Friday</p>
+                            <p>Saturday</p>
+                            <p>Sunday</p>
+                        </div>
+                        <div>
+                            <p>12:00PM - 7:00PM</p>
+                            <p>12:00PM - 7:00PM</p>
+                            <p>12:00PM - 7:00PM</p>
+                            <p>12:00PM - 7:00PM</p>
+                            <p>12:00PM - 7:00PM</p>
+                            <p>10:00AM - 5:00PM</p>
+                            <p>10:00AM - 5:00PM</p>
+                        </div>
+                    </div>
                     <h3>Contact</h3>
                     <p>Phone: (555) 555-5555</p>
                     <p>Email: contact@calicocenter.com</p>
@@ -48,6 +63,113 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.990326747198!2d-73.98608732378378!3d40.74023837138941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a0ab7d89eb%3A0xbf87ad431830f203!2s55%20Lexington%20Ave%2C%20New%20York%2C%20NY%2010010!5e0!3m2!1sen!2sus!4v1762810389742!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+        </section>
+        <section>
+            <p></p>Thank you for contacting Calico Center. To get your question answered most efficiently, please check our <a href="adoption_info.html">frequently asked questions</a> to see if your question has been answered.</p>
+        </section>
+        <section>
+            <h2 id="contact_us">Contact Us</h2>
+            <form action="thankyou.html" method="post">
+                <div class="input">
+                        <label for="firstName"><span class="required">*</span>First Name:</label>
+                        <input type="text" class="bar" id="firstName" placeholder="Enter in your first name" value="" pattern="[a-zA-Z]+" required>
+
+                        <label for="lastName"><span class="required">*</span>Last Name:</label>
+                        <input type="text" class="bar" id="lastName" placeholder="Enter in your last name" value="" pattern="[a-zA-Z]+" required>
+
+                        <label for="email"><span class="required">*</span>Email:</label>
+                        <input type="email" class="bar" id="email" placeholder="you@example.com" pattern="^(.+)@([^\.].*)\.([a-z]{2,})$" required>
+
+                        <label for="phone">Phone <span class="optional">(Optional):</span></label>
+                        <input type="tel" class="bar" id="phone" placeholder="(555)555-5555" pattern="^\\(?(\\d{3})\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$">
+
+                        <label for="purpose"><span class="required">*</span>Purpose:</label>
+                        <select class="bar" name="purpose" id="purpose">
+                            <option value="general">General</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="donate">Donate</option>
+                            <option value="foster">Foster</option>
+                            <option value="adoption">Adoption</option>
+                        </select>
+
+                        <div class="hide" id="sel_volunteer">
+                            <label for="volunteer_interests">Areas of interest:</label> <br>
+                            <input type="checkbox" id="volunteer_interest_cat" name="volunteer_interests" value="cat_care">Cat Care
+                            <input type="checkbox" id="volunteer_interest_event" name="volunteer_interests" value="events">Events
+                            <input type="checkbox" id="volunteer_interest_admin" name="volunteer_interests" value="admin">Admin
+                            <input type="checkbox" id="volunteer_interest_unsure" name="volunteer_interests" value="unsure">Not sure yet
+                            <br>
+
+                            <label for="availability">Availability:</label> <br>
+                            <input type="checkbox" id="available_weekdays" name="availability" value="weekdays">Weekdays
+                            <input type="checkbox" id="available_weekends" name="availability" value="weekends">Weekends
+                            <input type="checkbox" id="available_flexible" name="availability" value="flexible">Flexible
+                        </div>
+
+                        <div class="hide" id="sel_foster">
+                            <label for="foster_interests">Type of foster interest:</label> <br>
+                            <input type="checkbox" id="foster_interest_kitten" name="foster_interests" value="kitten">Kittens
+                            <input type="checkbox" id="foster_interest_adult" name="foster_interests" value="adults">Adults
+                            <input type="checkbox" id="foster_interest_short" name="foster_interests" value="short_term">Short-term
+                            <input type="checkbox" id="foster_interest_unsure" name="foster_interests" value="unsure">Not sure yet
+
+                            <br>
+
+                            <label for="pets_at_home">Have pets at home?</label> <br>
+                            <input type="radio" id="pets_home_yes" name="pets_at_home" value="yes">Yes
+                            <input type="radio" id="pets_home_no" name="pets_at_home" value="no">No
+
+                        </div>
+
+                        <div class="hide" id="sel_donate">
+                            <label for="donation_type">Donation Type:</label><br>
+                            <input type="radio" id="donation_one" name="donation_type" value="one_time">One-time
+                            <input type="radio" id="donation_month" name="donation_type" value="monthly">Monthly
+
+                            <br>
+
+                            <label for="intended_donation">Intended Donation Amount:</label><br>
+                            <input type="radio" id="donation_10" name="intended_donation" value="10">$10
+                            <input type="radio" id="donation_25" name="intended_donation" value="25">$25
+                            <input type="radio" id="donation_50" name="intended_donation" value="50">$50
+                            <input type="radio" id="donation_other" name="intended_donation" value="other">Other
+                            <p>Online donations are processed securely through a third-party provider.</p>
+
+                            <br>
+
+                            <div id="specific_donation" style="display:none;">
+                                <label for="donation_amount">Donation Amount:</label><br>
+                                <input class="bar" type="number" id="donation_amount" name="donation_amount" placeholder="1" min="1"  step="1" value="1">
+                            </div>
+
+                        </div>
+
+                        <div class="hide" id="sel_adoption">
+                            <p>Before applying, please read our <a href="adoption_info.html">adoption info page.</a></p>
+
+                            <label for="cat_ID">Interested in Cat:</label>
+                            <input type="number" class="form-control" id="cat_ID" placeholder="1" min="1" max="8" step="1" value="1">
+                            
+                            <br>
+
+                            <label for="living_situation">Living situation:</label><br>
+                            <input type="radio" id="living_apartment" name="living_situation" value="apartment">Apartment
+                            <input type="radio" id="living_house" name="living_situation" value="house">House
+                            <input type="radio" id="living_other" name="living_situation" value="other">Other
+
+                            <br>
+
+                            <label for="other_pets">Do you have other pets?</label><br>
+                            <input type="radio" id="pets_yes" name="other_pets" value="yes">Yes
+                            <input type="radio" id="pets_no" name="other_pets" value="no">No
+                        </div>
+
+                        <label for="comments">Comments <span class="optional">(Optional):</span></label>
+                        <textarea class="bar" id="comments" name="comments" rows="3" cols="30"></textarea>
+                    <br>
+                </div>
+                <button id="submit_button" class="cta_button" type="submit">Submit Application</button> <br><br>
+            </form>
         </section>
     </main>
     <footer>
@@ -69,6 +191,39 @@
         const lastModifiedDate = document.lastModified;
         const lastUpdatedElement = document.getElementById("last_updated");
         lastUpdatedElement.innerHTML = `Last Updated: ${lastModifiedDate}`;
+
+        let select = document.getElementById("purpose");
+        select.addEventListener("change", function() {
+            let selectedValue = select.value;
+            let sectionID = "sel_" + selectedValue;
+            let hidden = document.querySelectorAll(".hide");
+            hidden.forEach(section => {
+                section.style.display = 'none';
+            })
+            let section = document.getElementById(sectionID);
+            if(sectionID != 'sel_general'){
+                section.style.display = 'block';
+            }
+        })
+        
+        const donationButtons = document.querySelectorAll('input[name="intended_donation"]');
+        donationButtons.forEach(radio => {
+            let selectedValue = null;
+            const donationInput = document.getElementById("specific_donation");
+
+            radio.addEventListener('change', function() {
+                selectedValue = this.value;
+                if (selectedValue == 'other'){
+                    donationInput.style.display = 'block'
+                }
+                else {
+                    donationInput.style.display = 'none';
+                }
+            })
+            
+        })
+        
+
     </script>
 </body>
 </html>
