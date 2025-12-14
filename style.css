@@ -136,6 +136,11 @@ main {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner2_cat.jpg);
 }
 
+#banner3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner3.jpg);
+
+}
+
 .banner_content {
     position: absolute;
     top: 50%;
@@ -431,12 +436,20 @@ h1 {
 
 /* Get Involved */
 
-#volunteer img{
+#volunteer img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     margin: 5%; 
 }
+#donate img, #foster img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+
 
 /* Footer */
 
