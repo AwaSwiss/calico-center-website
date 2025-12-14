@@ -377,6 +377,8 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    padding-inline-start: 0;
+
     }
 
 #requirements {
