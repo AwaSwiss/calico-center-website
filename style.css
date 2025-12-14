@@ -380,8 +380,10 @@ form button {
 
 input#firstName:focus:invalid,
 input#lastName:focus:invalid,
-input#email:focus:invalid {
-    background: #fff8c4;
+input#email:focus:invalid,
+input#phone:focus:invalid{
+    background: lightpink;
+    border: 1px solid red;
 }
 
 input#firstName:focus:valid,
@@ -389,11 +391,25 @@ input#lastName:focus:valid,
 input#username:focus:valid,
 input#email:focus:valid,
 input#password:focus:valid {
-    background: white;
+    background: lightgreen;
 }
 
 #thank_you {
-    display: none;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/thank_you.jpg);
+    max-width: 100%;
+    height: 50em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    color: white;
+}
+
+#thank_you_content {
+    margin-top: 25%;
+    margin-bottom: 25%;
+    font-size: 3rem;
 }
 
 /* Contact Us Form */
