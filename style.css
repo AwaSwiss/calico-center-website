@@ -373,9 +373,9 @@ form button {
 }
 
 #submit_button {
+    display: inline-block;
     margin-left: 40%;
     margin-right: 40%;
-    display: block;
 }
 
 input#firstName:focus:invalid,
